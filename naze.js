@@ -191,6 +191,14 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
             timezone: "Asia/Jakarta"
         })
         
+// total hit
+        global.hit = {}
+if (isCmd) {
+data = await fetchJson('https://api.countapi.xyz/hit/naze-md/visits')
+jumlahcmd = `${data.value}`
+dataa = await fetchJson(`https://api.countapi.xyz/hit/naze-md${moment.tz('Asia/Jakarta').format('DDMMYYYY')}/visits`)
+jumlahharian = `${dataa.value}`
+}
 	// auto set bio
 	if (db.data.settings[botNumber].autobio) {
 	    let setting = global.db.data.settings[botNumber]
@@ -2909,6 +2917,8 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Owner* : @${ownernya.split('@')[0]}
 ├ *Mode* : ${naze.public ? 'Public' : `Self`}
 ├ *Prefix* :「 MULTI-PREFIX 」
+├ *Total Hit* : ${jumlahcmd}
+├ *Total Hit Today* : ${jumlahharian}
 ╰──❍
 
 ╭──❍「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼𝙉 𝙏𝙄𝙈𝙀 」❍
@@ -2938,6 +2948,8 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Nama Bot* : ${pushname}
 ├ *Mode* : ${naze.public ? 'Public' : `Self`}
 ├ *Prefix* :「 MULTI-PREFIX 」
+├ *Total Hit* : ${jumlahcmd}
+├ *Total Hit Today* : ${jumlahharian}
 ╰──❍
 
 ╭──❍「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼𝙉 𝙏𝙄𝙈𝙀 」❍
