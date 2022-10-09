@@ -1,8 +1,7 @@
 /**
-   * Create By Dika Ardnt.
-   * Recode By Naze Dev
-   * Contact Me on wa.me/6282113821188
-   * Follow https://github.com/nazedev
+   * Create Rull. 
+   * Recode Rull kece. 
+   * Contact Me on wa.me/6285385264438
 */
 
 const fs = require('fs')
@@ -19,11 +18,11 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6285875158363']
-global.ownernomer = "6285875158363"
-global.premium = ['6285875158363']
-global.packname = 'Sticker  Naze'
-global.author = 'Naze'
+global.owner = ['6285385264438']
+global.ownernomer = "6285385264438"
+global.premium = ['6285385264438']
+global.packname = 'Rull'
+global.author = 'Rull'
 global.sessionName = 'nazedev'  //jangan diganti bro nanti error
 global.prefa = ['','!','.','#','&']
 global.sp = ''
