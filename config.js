@@ -1,6 +1,6 @@
 /**
-   * Create By Dika Ardnt.
-   * Recode By Naze Dev
+   * Create By Elie.
+   * Recode By Elie
    * Contact Me on wa.me/6282113821188
    * Follow https://github.com/nazedev
 */
